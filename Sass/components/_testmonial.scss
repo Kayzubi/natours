@@ -1,7 +1,7 @@
 .testimonial {
     margin: 0 auto;
     width: 75%;
-    background-color: $color-white;
+    background-color:rgba($color-white, .6);
     padding: 6rem;
     box-shadow: 0 3rem 6rem rgba($color-black, .15);
     transform: skewX(-15deg);
@@ -29,10 +29,7 @@
     }
 
     &__caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
+        @include posCenter;
         color: $color-white;
         text-transform: uppercase;
         font-size: $default-font-size;
